@@ -11,9 +11,21 @@ public class Node {
 
     @Override
     public String toString() {
-        return "Node{" +
-                "item=" + item +
-                ", next=" + next +
-                '}';
+
+        StringBuilder sb = new StringBuilder();
+        Node x = this;
+
+        sb.append("[");
+        while (x != null){
+            sb.append(x.item);
+            if (x.item != null){
+                sb.append("->");
+            }
+            x = x.next;
+        }
+
+        sb.append("]");
+
+        return sb.toString();
     }
 }

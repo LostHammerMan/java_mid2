@@ -7,7 +7,11 @@ public class NodeMain2 {
         first.next = new Node("B");
         first.next.next = new Node("C");
 
-        System.out.println("연결된 노드 출력");
-        System.out.println("first = " + first);
+        //
+
+    }
+
+    private static void printAll(Node node){
+        Node x= node;
     }
 }
