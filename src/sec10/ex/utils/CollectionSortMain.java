@@ -22,5 +22,10 @@ public class CollectionSortMain {
 
         System.out.println("list = " + list);
         Collections.shuffle(list);
+        System.out.println("shuffle list = " + list);
+        Collections.sort(list);
+        System.out.println("sort List = " + list);
+        Collections.reverse(list);
+        System.out.println("reverse list" + list);
     }
 }
